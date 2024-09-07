@@ -206,7 +206,7 @@ button:hover {
 }
 @media (min-width: 768px) {
   body {
-    margin: var(--margin-700);
+    margin: var(--margin-300);
   }
   .form__container {
     width: 736px;
