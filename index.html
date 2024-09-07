@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/assets/style.css">
+  <title>Contact form</title>
+</head>
+
+<body>
+  <section class="form__container">
+    <div class="form">
+      <h1 class="heading">Contact Us</h1>
+      <form>
+        <div class="name">
+          <div class="firstname">
+            <label for="FirstName">First Name <span class="asterik">*</span></label>
+            <input type="text" name="name" class="nameInput" id="firstname">
+            <p class="text__error firstName__error hidden ">This field is required</p>
+          </div>
+          <div class="lastname">
+            <label for="LastName">Last Name <span class="asterik">*</span></label>
+            <input type="text" name="name" class="nameInput" id="lastname">
+            <p class="text__error lastName__error hidden">This field is required</p>
+          </div>
+        </div>
+        <div class="email">
+
+          <label for="Email">Email Address<span class="asterik">*</span></label>
+          <input type="email" name="emailAddress" id="email">
+          <p class="text__error hidden">This field is required</p>
+        </div>
+        <div class="query__type">
+          <label for="query__type">Query Type<span class="asterik">*</span></label>
+          <div class="query">
+            <div class="query__box">
+              <input type="radio" name="query" id="query1">
+              <p id="query__type1">General Enquiry</p>
+            </div>
+            <div class="query__box">
+              <input type="radio" name="query" id="query2">
+              <p id="query__type2">Support Request</p>
+            </div>
+          </div>
+          <p class="text__error query__error hidden">Please select a query type</p>
+        </div>
+        <div class="message">
+          <label for="message">Message<span class="asterik">*</span></label>
+          <textarea name="message" id="message"></textarea>
+          <p class="text__error message__error hidden">This field is required</p>
+        </div>
+      </form>
+    </div>
+    <span class="consent__message">
+      <input type="checkbox" name="checkbox" id="checkbox">
+      <p>I consent to being contacted by the team<span class="asterik">*</span></p>
+    </span>
+    <p class="text__error checkbox__error hidden">To submit this form, please consent to being contacted</p>
+    <button type="submit" class="submit">Submit</button>
+  </section>
+  <div class="confirmation__message hidden">
+    <span class="sent">
+      <img src="/assets/images/icon-success-check.svg" alt="checked">
+      <p id="msg1">Message Sent!</p>
+    </span>
+    <p id="msg2">Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+</body>
+<script src="/assets/script.js"></script>
+
+</html>
