@@ -44,7 +44,6 @@ submitBtn.addEventListener("click", (e) => {
   const emailIndex = Array.from(inputType).indexOf(email);
   if (!emailPattern.test(emailValue)) {
     errorHandler(email, emailIndex);
-    isValid = false;
   } else {
     clearErrorHandler(email, emailIndex);
   }
