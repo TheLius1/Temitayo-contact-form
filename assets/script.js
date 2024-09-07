@@ -23,6 +23,7 @@ const errorHandler = function (input, index) {
 const clearErrorHandler = function (input, index) {
   input.style.border = "";
   errorMSG[index].classList.add("hidden");
+  isValid = true;
 };
 
 submitBtn.addEventListener("click", (e) => {
@@ -55,6 +56,7 @@ submitBtn.addEventListener("click", (e) => {
     isValid = false;
   } else {
     query__errorMSG.classList.add("hidden");
+    isValid = true;
   }
 
   // TEXTAREA VALIDATION
@@ -65,6 +67,7 @@ submitBtn.addEventListener("click", (e) => {
   } else {
     textArea.style.border = "";
     message__error.classList.add("hidden");
+    isValid = true;
   }
 
   // CHECKBOX VALIDATION
@@ -74,6 +77,7 @@ submitBtn.addEventListener("click", (e) => {
     isValid = false;
   } else {
     errorMSG[checkboxIndex].classList.add("hidden");
+    isValid = true;
   }
 
   // SUCCESS VALIDATION
